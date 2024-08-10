@@ -25,6 +25,7 @@ class ViewController: UIViewController {
                       "spain", "uk", "us"]
         
         setButtonStyle()
+        view.backgroundColor = UIColor(red: 0.9569, green: 0.9686, blue: 1, alpha: 1.0)
         askQuestion(action: nil)
     }
     
@@ -38,17 +39,28 @@ class ViewController: UIViewController {
     }
     
     func setButtonStyle() {
-        button1.layer.borderWidth = 1
-        button2.layer.borderWidth = 1
-        button3.layer.borderWidth = 1
+        let buttonColor: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25)
+        let buttonSize: CGSize = CGSize(width: 0.0, height: 2.0)
+        let buttonShadow: Float = 1.0
+        let buttonShadowRadius = 4.0
+        let buttonMasksToBounds =  false
+        button1.layer.shadowColor = buttonColor.cgColor
+        button1.layer.shadowOffset = buttonSize
+        button1.layer.shadowOpacity = buttonShadow
+        button1.layer.shadowRadius = buttonShadowRadius
+        button1.layer.masksToBounds = buttonMasksToBounds
         
-        button1.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
-        button2.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
-        button3.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+        button2.layer.shadowColor = buttonColor.cgColor
+        button2.layer.shadowOffset = buttonSize
+        button2.layer.shadowOpacity = buttonShadow
+        button2.layer.shadowRadius = buttonShadowRadius
+        button2.layer.masksToBounds = buttonMasksToBounds
         
-        button1.layer.borderColor = UIColor.lightGray.cgColor
-        button2.layer.borderColor = UIColor.lightGray.cgColor
-        button3.layer.borderColor = UIColor.lightGray.cgColor
+        button3.layer.shadowColor = buttonColor.cgColor
+        button3.layer.shadowOffset = buttonSize
+        button3.layer.shadowOpacity = buttonShadow
+        button3.layer.shadowRadius = buttonShadowRadius
+        button3.layer.masksToBounds = buttonMasksToBounds
     }
     
     

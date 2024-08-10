@@ -18,6 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6Z-T9-2wh">
                                 <rect key="frame" x="84.666666666666686" y="130" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I6Z-T9-2wh" secondAttribute="height" multiplier="112:57" id="6wu-3x-fDX"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -26,6 +29,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m03-St-9u1">
                                 <rect key="frame" x="84.666666666666686" y="442" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="m03-St-9u1" secondAttribute="height" multiplier="112:57" id="QYf-FH-aGg"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -34,6 +40,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n2-Vp-0H2">
                                 <rect key="frame" x="84.666666666666686" y="287" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4n2-Vp-0H2" secondAttribute="height" multiplier="112:57" id="eYF-IV-UqI"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -45,8 +54,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="m03-St-9u1" firstAttribute="top" secondItem="4n2-Vp-0H2" secondAttribute="bottom" constant="41" id="1BJ-Kf-W81"/>
+                            <constraint firstItem="m03-St-9u1" firstAttribute="height" secondItem="4n2-Vp-0H2" secondAttribute="height" id="73A-gt-Yyr"/>
+                            <constraint firstAttribute="height" secondItem="I6Z-T9-2wh" secondAttribute="height" multiplier="7.47368" id="AQB-wF-sxS"/>
                             <constraint firstItem="I6Z-T9-2wh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="PfE-TG-39u"/>
                             <constraint firstItem="4n2-Vp-0H2" firstAttribute="top" secondItem="I6Z-T9-2wh" secondAttribute="bottom" constant="43" id="XHR-DN-kAY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="m03-St-9u1" secondAttribute="bottom" constant="20" id="XN2-7c-ksV"/>
                             <constraint firstItem="m03-St-9u1" firstAttribute="centerX" secondItem="4n2-Vp-0H2" secondAttribute="centerX" id="fXc-Fj-Rvb"/>
                             <constraint firstItem="I6Z-T9-2wh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="htz-rQ-O9Z"/>
                             <constraint firstItem="4n2-Vp-0H2" firstAttribute="centerX" secondItem="I6Z-T9-2wh" secondAttribute="centerX" id="iBJ-eZ-GQZ"/>
